@@ -22,6 +22,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test WebApplication2.sln
+      run: dotnet test --no-build --verbosity normal WebApplication2.sln
     - name: Publish
       run: dotnet publish WebApplication2.sln
